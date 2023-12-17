@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container for all the elements */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background-color: #EEE;
+    color: #333;
+    transition: all 0.4s ease-out;
+}
+
+/* Toggle Button */
+#toggle {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 60px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* Making a dot switch inside the Toggle Button */
+#toggle::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #EEE;
+    position: absolute;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: all 0.5s ease-in;
+}
+
+/* Changing toggle button background when checked */
+#toggle:checked {
+    background: yellow;
+}
+
+/* Changing dot switch color and moving to the right side when checked */
+#toggle:checked::before {
+    background: #333;
+    left: 32px;
+}
+#flags{
+
+    width:120px;
+    height: 80px;
+}
+#flagButton{
+    margin: 5px;
+}
