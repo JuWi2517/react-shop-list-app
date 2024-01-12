@@ -1,8 +1,8 @@
-function ItemList({ items, removeItem }) {
+function ItemList({ items, removeItem, boughtItem }) {
     return (
         <div className="item-list mb-4">
             {items.map(item => (
-                <div className="d-flex justify-content-between align-items-center border p-2 mb-2" key={item.id}>
+                <div id={item.id} className="d-flex justify-content-between align-items-center border p-2 mb-2" key={item.id}>
                     <div className="item-name">{item.name}</div>
                     <div className="item-quantity">{item.quantity} ks</div>
                     <div>
